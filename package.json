@@ -19,7 +19,7 @@
     "strava"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/StravaEnhancer.js",
   "pre-commit": [
     "lint",
     "validate"
@@ -27,10 +27,10 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
     "lint": "eslint --ignore-path .gitignore .",
-    "validate": "npm ls",
+    "validate": "npm ls >/dev/null",
     "preversion": "npm run build && npm run validate && npm run lint",
-    "publish-patch": "npm run preversion && npm version patch && npm publish",
-    "publish-minor": "npm run preversion && npm version minor && npm publish",
-    "publish-major": "npm run preversion && npm version major && npm publish"
+    "publish-patch": "npm version patch && npm publish",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-major": "npm version major && npm publish"
   }
 }
