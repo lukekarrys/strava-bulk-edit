@@ -25,8 +25,7 @@
     "validate"
   ],
   "scripts": {
-    "build": "NODE_ENV=production webpack src/index.js dist/StravaEnhancer.js",
-    "build.min": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.min.js",
+    "build": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
     "lint": "eslint --ignore-path .gitignore .",
     "validate": "npm ls"
   }
