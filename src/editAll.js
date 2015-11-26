@@ -102,7 +102,7 @@ const editAll = (option) => {
 const attach = () => {
   const id = `${PLUGIN_NAME}__activities_edit_all`;
   const options = Object.keys(ACTIONS).map((key) => `<option value='${key}'>${key}</option>`);
-  const $select = $(`<select id='${id}'><option>Edit All</option>${options}</select>`);
+  const $select = $(`<select style="margin-left: 10px" id='${id}'><option>Edit All</option>${options}</select>`);
 
   $select.on('change', (e) => {
     e.preventDefault();
