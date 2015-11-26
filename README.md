@@ -5,6 +5,8 @@ strava-enhancer
 
 I really wanted bulk editing for my 224 Strava activities so I could make them all public. It started as simple script I wrote in the browser console and ended up as this. It currently only adds bulk editing, but I'm open to adding more enhancements. If you have an idea, please [open an issue](https://github.com/lukekarrys/strava-enhancer/issues/new).
 
+This is in now way affiliated with Strava, Inc.
+
 
 ## Installation
 
@@ -53,3 +55,7 @@ StravaEnhancer.editAll({
   }
 })
 ```
+
+## LICENSE
+
+MIT
