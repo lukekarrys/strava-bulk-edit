@@ -4,7 +4,7 @@ const $ = window.jQuery;
 
 // A row will be processed every DELAY ms and actions will wait until
 // OPEN_CLOSE_DELAY
-const DELAY = 400;
+const DELAY = 250;
 const OPEN_CLOSE_DELAY = 20;
 
 // A map of selectors of DOM elements within a row
