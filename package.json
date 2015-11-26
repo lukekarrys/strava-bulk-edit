@@ -1,7 +1,7 @@
 {
   "name": "strava-enhancer",
   "description": "A plugin to add some enhancements to Strava.com.",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "devDependencies": {
     "@lukekarrys/eslint-config": "^1.0.30",
