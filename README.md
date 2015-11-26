@@ -1,6 +1,10 @@
 strava-enhancer
 ========================
 
+## What is this?
+
+I really wanted bulk editing for my 224 Strava activities so I could make them all public. It started as simple script I wrote in the browser console and ended up as this. It currently only adds bulk editing, but I'm open to adding more enhancements. If you have an idea, please [open an issue](https://github.com/lukekarrys/strava-enhancer/issues/new).
+
 
 ## Installation
 
@@ -27,16 +31,17 @@ Currently, only the pages below are supported. If you have a suggestion for some
 
 ## Enhancements
 
-### Training Page
+### Training Page Bulk Editing
 
 On the training page, it will add a dropdown to edit all currently visible activities to either public or private.
 
 ![](https://cldup.com/Nw5gUdqMmN.png)
 
-#### API
+Or you can use the API to edit any part of the row using some JS in the console.
 
 ```js
 StravaEnhancer.editAll({
+  // $row is a jQuery object
   action: function ($row) {
     // Run the action that you want to perform on each activity row
     $row.find('[name=description]').val('Adding notes here!')
