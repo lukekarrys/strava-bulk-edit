@@ -1,6 +1,6 @@
 {
   "name": "strava-enhancer",
-  "description": "A plugin to add some enhancements to Strava.com.",
+  "description": "A plugin to add bulk editing to activities to Strava.com.",
   "version": "0.1.1",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "devDependencies": {

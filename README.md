@@ -1,11 +1,11 @@
-strava-enhancer
+strava-bulk-edit
 ========================
 
 ## What is this?
 
-I really wanted bulk editing for my 224 Strava activities so I could make them all public. It started as simple script I wrote in the browser console and ended up as this. It currently only adds bulk editing, but I'm open to adding more enhancements. If you have an idea, please [open an issue](https://github.com/lukekarrys/strava-enhancer/issues/new).
+I really wanted bulk editing for my 224 Strava activities so I could make them all public. It started as simple script I wrote in the browser console and ended up as this.
 
-This is in now way affiliated with Strava, Inc.
+This is in not affiliated with Strava, Inc in any way.
 
 
 ## Installation
@@ -23,15 +23,8 @@ This is just a quick WIP for now, in the future there will be a better installat
 
 Loading the script will do the following:
 
-- Create `window.StravaEnhancer` containing all the api methods
+- Create `window.StravaEnhancer` containing the API methods
 - Attach any necessary DOM elements to the current page
-
-Most enhancements will have some DOM elements added for basic tasks, and will also have more complex functionality availability on `window.stravaEnhancer.API_METHOD_NAME`.
-
-Currently, only the pages below are supported. If you have a suggestion for something else this could do, please open an issue :).
-
-
-## Enhancements
 
 ### Training Page Bulk Editing
 
