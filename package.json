@@ -1,7 +1,7 @@
 {
   "name": "strava-enhancer",
   "description": "A plugin to add bulk editing to activities to Strava.com.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "devDependencies": {
     "@lukekarrys/eslint-config": "^1.0.30",
