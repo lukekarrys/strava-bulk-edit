@@ -30,7 +30,7 @@ Loading the script will do the following:
 
 On the training page, it will add a dropdown to edit all activities to either public or private. It will do this by iterating over each one on the current page, and when it reaches the end of the page, navigating to the next page and starting over. It will also add a Cancel button while it's happening to abort any remaming activities.
 
-![](https://cldup.com/lhPseq_bE0.gif)
+![](https://cldup.com/7pZH0ZPSnR.gif)
 
 Or you can use the API to edit any part of the row using some JS in the console.
 
