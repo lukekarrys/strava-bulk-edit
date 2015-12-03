@@ -41,9 +41,6 @@
     "lint": "eslint --ignore-path .gitignore .",
     "preversion": "npm run development && npm run production && npm run validate && npm run lint",
     "production": "NODE_ENV=production webpack -p src/index.js dist/StravaBulkEdit.js",
-    "publish-major": "npm version major && npm publish",
-    "publish-minor": "npm version minor && npm publish",
-    "publish-patch": "npm version patch && npm publish",
     "validate": "npm ls >/dev/null"
   }
 }
