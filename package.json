@@ -31,7 +31,7 @@
     "debug": "npm run development && cat dist/StravaEnhancer.dev.js | pbcopy",
     "development": "webpack src/index.js dist/StravaEnhancer.dev.js",
     "lint": "eslint --ignore-path .gitignore .",
-    "preversion": "npm run production && npm run validate && npm run lint",
+    "preversion": "npm run development && npm run production && npm run validate && npm run lint",
     "production": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
     "publish-major": "npm version major && npm publish",
     "publish-minor": "npm version minor && npm publish",
