@@ -1,7 +1,7 @@
 {
   "name": "strava-enhancer",
   "description": "A plugin to add bulk editing to activities to Strava.com.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "dependencies": {
     "lodash.pull": "^3.0.1"
