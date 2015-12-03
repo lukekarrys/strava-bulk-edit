@@ -3,6 +3,9 @@
   "description": "A plugin to add bulk editing to activities on Strava.com.",
   "version": "0.3.0",
   "author": "Luke Karrys <luke@lukekarrys.com>",
+  "bugs": {
+    "url": "https://github.com/lukekarrys/strava-bulk-edit/issues"
+  },
   "dependencies": {
     "lodash.pull": "^3.0.1"
   },
@@ -18,6 +21,7 @@
     "rimraf": "^2.4.4",
     "webpack": "^1.12.9"
   },
+  "homepage": "https://github.com/lukekarrys/strava-bulk-edit",
   "keywords": [
     "strava"
   ],
@@ -27,6 +31,10 @@
     "lint",
     "validate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukekarrys/strava-bulk-edit.git"
+  },
   "scripts": {
     "debug": "npm run development && cat dist/StravaBulkEdit.dev.js | pbcopy",
     "development": "webpack src/index.js dist/StravaBulkEdit.dev.js",
