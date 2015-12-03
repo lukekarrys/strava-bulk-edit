@@ -28,23 +28,27 @@ Loading the script will do the following:
 
 ### Training Page Bulk Editing
 
-On the training page, it will add a dropdown to edit all currently visible activities to either public or private.
+On the training page, it will add a dropdown to edit all activities to either public or private. It will do this by iterating over each one on the current page, and when it reaches the end of the page, navigating to the next page and starting over. It will also add a Cancel button while it's happening to abort any remaming activities.
 
-![](https://cldup.com/Nw5gUdqMmN.png)
+![](https://cldup.com/lhPseq_bE0.gif)
 
 Or you can use the API to edit any part of the row using some JS in the console.
 
 ```js
+// $row is always is a jQuery object
 StravaEnhancer.editAll({
-  // $row is a jQuery object
+  // Run the action that you want to perform on each activity row
   action: function ($row) {
-    // Run the action that you want to perform on each activity row
-    $row.find('[name=description]').val('Adding notes here!')
+    // e.g. Set the description of each row to "Big climb!"
+    $row.find('[name=description]').val('Big climb!');
   },
-  // Optionally, only run the action on certain rows.
+  // Optionally, only run the action on certain rows, by default, the action will
+  // run for all rows. Return true or false from this to determine if the activity
+  // row should have the action peformed on it.
   condition: function ($row) {
-    // Return true or false from this to determine if the activity row should
-    // have the action peformed on it. This defaults to `true` for all rows.
+    // e.g. Only set the description if the elevation is more than 1000
+    var elevation = $row.find('li:contains(Elevation)').text().replace(/\D/g, '');
+    return parseInt(elevation, 10) > 1000;
   }
 })
 ```

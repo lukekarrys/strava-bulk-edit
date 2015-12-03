@@ -3,6 +3,9 @@
   "description": "A plugin to add bulk editing to activities to Strava.com.",
   "version": "0.1.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
+  "dependencies": {
+    "lodash.pull": "^3.0.1"
+  },
   "devDependencies": {
     "@lukekarrys/eslint-config": "^1.0.30",
     "babel": "^5.8.34",
@@ -25,12 +28,14 @@
     "validate"
   ],
   "scripts": {
-    "build": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
+    "debug": "npm run development && cat dist/StravaEnhancer.dev.js | pbcopy",
+    "development": "webpack src/index.js dist/StravaEnhancer.dev.js",
     "lint": "eslint --ignore-path .gitignore .",
-    "validate": "npm ls >/dev/null",
-    "preversion": "npm run build && npm run validate && npm run lint",
-    "publish-patch": "npm version patch && npm publish",
+    "preversion": "npm run production && npm run validate && npm run lint",
+    "production": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
+    "publish-major": "npm version major && npm publish",
     "publish-minor": "npm version minor && npm publish",
-    "publish-major": "npm version major && npm publish"
+    "publish-patch": "npm version patch && npm publish",
+    "validate": "npm ls >/dev/null"
   }
 }
