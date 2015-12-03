@@ -5,8 +5,6 @@ strava-bulk-edit
 
 I really wanted bulk editing for my 224 Strava activities so I could make them all public. It started as simple script I wrote in the browser console and ended up as this.
 
-This is in not affiliated with Strava, Inc in any way.
-
 
 ## Installation
 
@@ -52,6 +50,10 @@ StravaBulkEdit.editAll({
   }
 })
 ```
+
+## Disclaimer
+
+This is in not affiliated with Strava, Inc. in any way. The term STRAVA and the Strava logo are the exclusive trademarks of, and are owned by, Strava Inc.
 
 ## LICENSE
 
