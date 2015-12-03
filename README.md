@@ -15,7 +15,7 @@ Currently the only way to use this is to load it in the console of Strava.com. T
 This is just a quick WIP for now, in the future there will be a better installation process, if I deem this useful enough.
 
 ```js
-> jQuery.getScript('https://npmcdn.com/strava-enhancer')
+> jQuery.getScript('https://npmcdn.com/strava-bulk-edit')
 ```
 
 
@@ -23,7 +23,7 @@ This is just a quick WIP for now, in the future there will be a better installat
 
 Loading the script will do the following:
 
-- Create `window.StravaEnhancer` containing the API methods
+- Create `window.StravaBulkEdit` containing the API methods
 - Attach any necessary DOM elements to the current page
 
 ### Training Page Bulk Editing
@@ -36,7 +36,7 @@ Or you can use the API to edit any part of the row using some JS in the console.
 
 ```js
 // $row is always is a jQuery object
-StravaEnhancer.editAll({
+StravaBulkEdit.editAll({
   // Run the action that you want to perform on each activity row
   action: function ($row) {
     // e.g. Set the description of each row to "Big climb!"

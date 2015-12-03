@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
   output: {
-    library: 'StravaEnhancer',
+    library: 'StravaBulkEdit',
     libraryTarget: 'window'
   },
   module: {
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'PLUGIN_NAME': JSON.stringify('StravaEnhancer'),
+      'PLUGIN_NAME': JSON.stringify('StravaBulkEdit'),
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     })
   ]

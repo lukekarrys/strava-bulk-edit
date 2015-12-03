@@ -1,5 +1,5 @@
 {
-  "name": "strava-enhancer",
+  "name": "strava-bulk-edit",
   "description": "A plugin to add bulk editing to activities to Strava.com.",
   "version": "0.2.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
@@ -22,17 +22,17 @@
     "strava"
   ],
   "license": "MIT",
-  "main": "dist/StravaEnhancer.js",
+  "main": "dist/StravaBulkEdit.js",
   "pre-commit": [
     "lint",
     "validate"
   ],
   "scripts": {
-    "debug": "npm run development && cat dist/StravaEnhancer.dev.js | pbcopy",
-    "development": "webpack src/index.js dist/StravaEnhancer.dev.js",
+    "debug": "npm run development && cat dist/StravaBulkEdit.dev.js | pbcopy",
+    "development": "webpack src/index.js dist/StravaBulkEdit.dev.js",
     "lint": "eslint --ignore-path .gitignore .",
     "preversion": "npm run development && npm run production && npm run validate && npm run lint",
-    "production": "NODE_ENV=production webpack -p src/index.js dist/StravaEnhancer.js",
+    "production": "NODE_ENV=production webpack -p src/index.js dist/StravaBulkEdit.js",
     "publish-major": "npm version major && npm publish",
     "publish-minor": "npm version minor && npm publish",
     "publish-patch": "npm version patch && npm publish",
