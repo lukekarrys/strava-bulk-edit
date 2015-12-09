@@ -1,7 +1,7 @@
 {
   "name": "strava-bulk-edit",
   "description": "A plugin to add bulk editing to activities on Strava.com.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Luke Karrys <luke@lukekarrys.com>",
   "bugs": {
     "url": "https://github.com/lukekarrys/strava-bulk-edit/issues"
