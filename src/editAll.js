@@ -46,18 +46,18 @@ const runOnNextPage = (fn) => {
 // A map of predefined actions
 let ACTIONS = {
   public: {
-    condition ($row) {
+    condition($row) {
       return $$($row, 'private').is(':checked');
     },
-    action ($row) {
+    action($row) {
       $$($row, 'private').prop('checked', false);
     }
   },
   private: {
-    condition ($row) {
+    condition($row) {
       return !$$($row, 'private').is(':checked');
     },
-    action ($row) {
+    action($row) {
       $$($row, 'private').prop('checked', true);
     }
   }
@@ -67,15 +67,15 @@ if (process.env.NODE_ENV === 'development') {
   ACTIONS = {
     ...ACTIONS,
     CONDITION_FALSE: {
-      condition () {
+      condition() {
         return false;
       }
     },
     CONDITION_TRUE: {
-      condition () {
+      condition() {
         return true;
       },
-      action ($row) {
+      action($row) {
         log($row);
       }
     }
