@@ -15,7 +15,7 @@ const {$} = utils; // jQuery
 const $$ = ($el, s) => {
   const map = {
     header: 'form.search .inline-inputs',
-    private: '[name=private]',
+    'private': '[name=private]',
     edit: '.quick-edit',
     cancel: '.cancel',
     save: '[type=submit]',
@@ -45,7 +45,7 @@ const runOnNextPage = (fn) => {
 
 // A map of predefined actions
 let ACTIONS = {
-  public: {
+  'public': {
     condition($row) {
       return $$($row, 'private').is(':checked');
     },
@@ -53,7 +53,7 @@ let ACTIONS = {
       $$($row, 'private').prop('checked', false);
     }
   },
-  private: {
+  'private': {
     condition($row) {
       return !$$($row, 'private').is(':checked');
     },
@@ -168,7 +168,7 @@ const editAll = (option, cancelables = []) => {
 const attach = () => {
   const id = `data-plugin-name="${PLUGIN_NAME}__activities_edit_all"`;
   const options = Object.keys(ACTIONS).map((key) => `<option value='${key}'>${key}</option>`);
-  const style = `style="margin-left: 10px"`;
+  const style = 'style="margin-left: 10px"';
   const $select = $(`<select ${style} ${id}'><option value="">Edit All</option>${options}</select>`);
   const $header = $$('header');
 

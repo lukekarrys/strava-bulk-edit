@@ -12,13 +12,13 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel?stage=0&loose=all'
+        loader: 'babel'
       }
     ]
   },
   plugins: [
     new webpack.DefinePlugin({
-      'PLUGIN_NAME': JSON.stringify('StravaBulkEdit'),
+      PLUGIN_NAME: JSON.stringify('StravaBulkEdit'),
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     })
   ]
