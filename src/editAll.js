@@ -8,7 +8,8 @@ const DELAY = 150;
 const OPEN_CLOSE_DELAY = 15;
 const LOADING_INTERVAL = 15;
 
-const log = (...args) => process.env.NODE_ENV === 'development' && console.log(...args); // eslint-disable-line no-console
+ // eslint-disable-next-line no-console
+const log = (...args) => process.env.NODE_ENV === 'development' && console.log(...args);
 
 // A map of selectors of DOM elements that
 const {$} = utils; // jQuery
