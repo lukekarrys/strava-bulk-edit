@@ -38,7 +38,7 @@ const $$ = ($el, s) => {
 const runOnNextPage = (fn) => {
   utils.scrollToTop($$('header'));
   if (utils.clickIfExists($$('nextPage'))) {
-    let waitForLoading;
+    let waitForLoading = null;
     const run = () => clearInterval(waitForLoading) || fn();
     waitForLoading = setInterval(() => !utils.exists($$('loading')) && run(), LOADING_INTERVAL);
   }
