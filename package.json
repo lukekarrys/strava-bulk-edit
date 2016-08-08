@@ -3,6 +3,11 @@
   "description": "A plugin to add bulk editing to activities on Strava.com.",
   "version": "1.0.2",
   "author": "Luke Karrys <luke@lukekarrys.com>",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/lukekarrys/strava-bulk-edit/issues"
   },
@@ -16,9 +21,15 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-0": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "electron-prebuilt": "^1.3.2",
     "git-validate": "^2.1.4",
     "rimraf": "^2.5.4",
     "standard": "^7.1.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0",
+    "tape-run": "^2.1.4",
     "webpack": "^1.13.1"
   },
   "homepage": "https://github.com/lukekarrys/strava-bulk-edit",
@@ -41,6 +52,7 @@
     "lint": "standard",
     "preversion": "npm run development && npm run production && npm run validate && npm run lint",
     "production": "NODE_ENV=production webpack -p src/index.js dist/StravaBulkEdit.js",
+    "test": "browserify test/index.js | tape-run | tap-spec",
     "validate": "npm ls >/dev/null"
   },
   "standard": {
