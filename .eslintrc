@@ -1,6 +1,0 @@
-{
-  "extends": "@lukekarrys/eslint-config",
-  "globals": {
-    "PLUGIN_NAME": false
-  }
-}
