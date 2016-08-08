@@ -32,6 +32,9 @@
     "tape-run": "^2.1.4",
     "webpack": "^1.13.1"
   },
+  "files": [
+    "dist/*"
+  ],
   "homepage": "https://github.com/lukekarrys/strava-bulk-edit",
   "keywords": [
     "strava"
