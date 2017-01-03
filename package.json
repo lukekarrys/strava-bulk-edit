@@ -3,6 +3,7 @@
   "description": "A plugin to add bulk editing to activities on Strava.com.",
   "version": "1.0.3",
   "author": "Luke Karrys <luke@lukekarrys.com>",
+  "browser": "dist/StravaBulkEdit.js",
   "browserify": {
     "transform": [
       "babelify"
