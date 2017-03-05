@@ -16,7 +16,7 @@ Currently the only way to use this is to load it in the console of Strava.com. T
 This is just a quick WIP for now, in the future there will be a better installation process, if I deem this useful enough.
 
 ```js
-> jQuery.getScript('https://unpkg.com/strava-bulk-edit/dist/StravaBulkEdit.js')
+> jQuery.getScript('https://unpkg.com/strava-bulk-edit@1.0.4/dist/StravaBulkEdit.js')
 ```
 
 
