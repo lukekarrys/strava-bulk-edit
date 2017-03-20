@@ -54,10 +54,10 @@
   },
   "scripts": {
     "debug": "npm run development && cat dist/StravaBulkEdit.dev.js | pbcopy",
-    "development": "webpack src/index.js dist/StravaBulkEdit.dev.js",
+    "development": "webpack --bail src/index.js dist/StravaBulkEdit.dev.js",
     "lint": "standard",
     "preversion": "npm run development && npm run production && npm run validate && npm run lint",
-    "production": "NODE_ENV=production webpack -p src/index.js dist/StravaBulkEdit.js",
+    "production": "NODE_ENV=production webpack --bail -p src/index.js dist/StravaBulkEdit.js",
     "test": "browserify test/index.js | tape-run | tap-spec",
     "validate": "npm ls >/dev/null"
   },
