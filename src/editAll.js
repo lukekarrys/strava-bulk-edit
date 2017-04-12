@@ -17,14 +17,14 @@ const log = (...args) => process.env.NODE_ENV === 'development' && console.log(.
 const {$} = utils // jQuery
 const $$ = ($el, s) => {
   const map = {
-    header: 'form.search .inline-inputs',
+    header: 'form.search .panel-body .form-group:nth-child(2)',
     'private': '[name=private]',
     edit: '.quick-edit',
     cancel: '.cancel',
     save: '[type=submit]',
     row: '.training-activity-row',
-    nextPage: 'a.button.next_page',
-    previousPage: 'a.button.previous_page',
+    nextPage: 'button.next_page',
+    previousPage: 'button.button.previous_page',
     loading: '.updating-col:visible',
     viewMode: '.view-col',
     editMode: '.edit-col'
