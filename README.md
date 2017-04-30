@@ -1,6 +1,8 @@
 strava-bulk-edit
 ========================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lukekarrys/strava-bulk-edit.svg)](https://greenkeeper.io/)
+
 _2017-04-12 Update: I think I fixed the selectors. Try it out! 😄_
 
 [![Build Status](https://travis-ci.org/lukekarrys/strava-bulk-edit.png?branch=master)](https://travis-ci.org/lukekarrys/strava-bulk-edit)
