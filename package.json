@@ -53,6 +53,7 @@
   },
   "scripts": {
     "debug": "npm run development && cat dist/StravaBulkEdit.dev.js | pbcopy",
+    "debug-prod": "npm run production && cat dist/StravaBulkEdit.js | pbcopy",
     "development": "webpack --bail src/index.js dist/StravaBulkEdit.dev.js",
     "lint": "standard",
     "preversion": "npm run development && npm run production && npm run validate && npm run lint",

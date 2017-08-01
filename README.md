@@ -20,7 +20,7 @@ Currently the only way to use this is to load it in the console of Strava.com. T
 This is just a quick WIP for now, in the future there will be a better installation process, if I deem this useful enough.
 
 ```js
-> jQuery.getScript('https://unpkg.com/strava-bulk-edit@1.0.7/dist/StravaBulkEdit.js')
+> jQuery.getScript('https://unpkg.com/strava-bulk-edit@1.0.8/dist/StravaBulkEdit.js')
 ```
 
 
@@ -57,6 +57,29 @@ StravaBulkEdit.editAll({
   }
 })
 ```
+
+### Training Log Totals
+
+On the training log page, it will add a button above the months nav which will auto-click through all the months to load the available data. After that, it will log an array of all available weeks with data for `elevation`, `miles`, and `time`. Note that this info will be available in the JS console.
+
+Each time you run this it will save the latest fetched data to `localStorage` and use that as the earliest date next time.
+
+![](https://cldup.com/oQEK1ub90q.png)
+
+Or you can use the JS API:
+
+```js
+StravaBulkEdit.totalActivityLog({
+  // Optional week interval to set as the earliest week to get data for
+  // If left out, will use the value from the last run from localStorage
+  earliestInterval: '2017y21w'
+})
+// Output
+//  [{"interval":"2017y30w","week":30,"year":2017,"miles":19.7,"time":199,"elevation":2096}, ...]
+//  Found 10 weeks from 2017y21w to 2017y30w
+```
+
+_So this method doesn't have anything to do with bulk editing, but I figured I'd add it to this package. I might get around to changing the name of this package later, but probably not._
 
 ## Disclaimer
 
