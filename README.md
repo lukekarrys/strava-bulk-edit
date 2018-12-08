@@ -5,7 +5,6 @@ _2018-12-07 Update: This no longer works with the latest updates to the Strava s
 
 [![Build Status](https://travis-ci.org/lukekarrys/strava-bulk-edit.png?branch=master)](https://travis-ci.org/lukekarrys/strava-bulk-edit)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/lukekarrys/strava-bulk-edit.svg)](https://greenkeeper.io/)
 
 
 ## What is this?
