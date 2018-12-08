@@ -1,7 +1,7 @@
 strava-bulk-edit
 ========================
 
-_2017-04-12 Update: I think I fixed the selectors. Try it out! 😄_
+_2018-12-07 Update: This no longer works with the latest updates to the Strava site._
 
 [![Build Status](https://travis-ci.org/lukekarrys/strava-bulk-edit.png?branch=master)](https://travis-ci.org/lukekarrys/strava-bulk-edit)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
