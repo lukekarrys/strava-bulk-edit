@@ -18,7 +18,7 @@ const {$} = utils // jQuery
 const $$ = ($el, s) => {
   const map = {
     header: 'form.search .panel-body .form-group:nth-child(2)',
-    'private': '[name=private]',
+    'visibility': '[name=visibility]',
     edit: '.quick-edit',
     cancel: '.cancel',
     save: '[type=submit]',
@@ -50,18 +50,18 @@ const runOnNextPage = (fn) => {
 let ACTIONS = {
   'public': {
     condition ($row) {
-      return $$($row, 'private').is(':checked')
+      return $$($row, 'visibility').val() !== 'everyone'
     },
     action ($row) {
-      $$($row, 'private').prop('checked', false)
+      $$($row, 'visibility').val('everyone')
     }
   },
   'private': {
     condition ($row) {
-      return !$$($row, 'private').is(':checked')
+      return $$($row, 'visibility').val() !== 'only_me'
     },
     action ($row) {
-      $$($row, 'private').prop('checked', true)
+      $$($row, 'visibility').val('only_me')
     }
   }
 }
