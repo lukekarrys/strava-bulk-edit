@@ -1,6 +1,8 @@
 strava-bulk-edit
 ========================
 
+_2020-06-02 Update: This is now possible [directly in Strava](https://support.strava.com/hc/en-us/articles/360034390012)._
+
 _2019-04-22 Update: The public/private dropdown is working again._
 
 [![Build Status](https://travis-ci.org/lukekarrys/strava-bulk-edit.png?branch=master)](https://travis-ci.org/lukekarrys/strava-bulk-edit)
