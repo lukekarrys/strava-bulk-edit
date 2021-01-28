@@ -24,7 +24,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babelify": "^8.0.0",
     "browserify": "^14.4.0",
-    "electron": "^1.6.11",
+    "electron": "^9.4.0",
     "git-validate": "^2.2.2",
     "rimraf": "^2.6.1",
     "standard": "^10.0.2",
